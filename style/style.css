@@ -1,0 +1,147 @@
+body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #1C7430;
+    padding: 0;
+    margin: 0;
+
+}
+
+.clear-fix:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.start-image {
+    width: 503px;
+    height: 262px;
+}
+
+.title {
+    display: inline-block;
+    opacity: 0.85;
+    font-size: 28px;
+    color: #FFFFFF;
+    letter-spacing: 0.2px;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+    margin-top: 20px;
+    width: 285px;
+    height: 39px;
+}
+
+p {
+    opacity: 0.85;
+    font-size: 28px;
+    color: #FFFFFF;
+    font-weight: bold;
+    letter-spacing: 0.2px;
+    text-align: center;
+    margin: 0;
+    margin-top: 10px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: white;
+    text-decoration: none;
+    width: 144px;
+    height: 42px;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #1C7430;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 39px;
+    margin-top: 34px;
+}
+
+/* Стили для карт */
+.in-game-interface {
+    margin-bottom: 20px;
+}
+
+.in-game-interface a {
+    float: left;
+    text-decoration: none;
+}
+
+.in-game-interface > span {
+    float: right;
+}
+
+.in-game-interface-elements {
+    opacity: 0.8;
+    font-size: 14px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+}
+
+.cards-container {
+    width: 730px;
+    height:  485.8px;
+}
+
+.card {
+    display: inline-block;
+    width: 105px;
+    height: 148.6px;
+    box-shadow: 0px 0px 10px 0px black;
+    border-radius: 5px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    background-size: cover;
+}
+
+
+.card:nth-child(6n) {
+    margin-right: 0;
+}
+
+
+.empty-card {
+    display: inline-block;
+    width: 105px;
+    height: 148.6px;
+    box-shadow: none;
+    border-radius: 5px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.card:hover {
+    box-shadow: 0px 0px 10px 4px #7fbfff;
+    cursor: pointer;
+}
+
+.empty-card:hover {
+    box-shadow: none;
+    cursor: default;
+}
+
+.back {
+    background-image: url('../image/rubs2.gif') !important;
+    background-size: cover;
+}
+
+
+
+
