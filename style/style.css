@@ -74,7 +74,6 @@ p {
     margin-top: 34px;
 }
 
-/* Стили для карт */
 .in-game-interface {
     margin-bottom: 20px;
 }
@@ -97,7 +96,7 @@ p {
 
 .cards-container {
     width: 730px;
-    height:  485.8px;
+    height: 485.8px;
 }
 
 .card {
@@ -138,10 +137,6 @@ p {
 }
 
 .back {
-    background-image: url('../image/rubs2.gif') !important;
+    background-image: url('../image/rubs.gif') !important;
     background-size: cover;
 }
-
-
-
-
