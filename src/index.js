@@ -1,6 +1,3 @@
-import './css/style.less';
-import StartScreen from './components/StartScreen/index.js';
+import App from './components/App/';
 
-window.onload = function () {
-  StartScreen();
-}
+App();
