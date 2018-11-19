@@ -1,11 +1,11 @@
 const score = {
     result: 0,
     add: function() {
-        let lostCard = document.querySelectorAll('.back');
+        let lostCard = document.querySelectorAll('[data-tid="Card"]');
         score.result = score.result + lostCard.length * 42;
     },
     remove: function() {
-        let lostCard = document.querySelectorAll('.back');
+        let lostCard = document.querySelectorAll('[data-tid="Card"]');
         score.result = score.result - lostCard.length * 42;
     },
     init: function() {
