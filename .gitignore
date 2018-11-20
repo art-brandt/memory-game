@@ -1,6 +1,2 @@
 node_modules/
-tests/
-webpack.tests.config.js
-.vscode/
-dist/
-package-lock.json
+.vscode

@@ -1,0 +1,41 @@
+{
+  "name": "memory-game",
+  "private": true,
+  "scripts": {
+    "test": "webpack --config webpack.tests.config.js --mode=development",
+    "build": "webpack --mode=production",
+    "watch": "webpack --watch",
+    "dev": "webpack --mode=development",
+    "start": "webpack-dev-server --open"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.1.2",
+    "@babel/preset-env": "^7.1.0",
+    "@babel/register": "^7.0.0",
+    "autoprefixer": "^9.1.5",
+    "babel-loader": "^8.0.4",
+    "chai": "^4.2.0",
+    "css-loader": "^1.0.0",
+    "file-loader": "^2.0.0",
+    "html-loader": "^0.5.5",
+    "less": "^3.8.1",
+    "less-loader": "^4.1.0",
+    "mini-css-extract-plugin": "^0.4.4",
+    "mocha": "^5.2.0",
+    "mocha-jsdom": "^2.0.0",
+    "mocha-loader": "^2.0.0",
+    "null-loader": "^0.1.1",
+    "postcss": "^7.0.5",
+    "postcss-loader": "^3.0.0",
+    "style-loader": "^0.23.0",
+    "webpack": "^4.19.1",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.8"
+  },
+  "proxy": "http://localhost:8000",
+  "babel": {
+    "presets": [
+      "@babel/env"
+    ]
+  }
+}
