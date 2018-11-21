@@ -5,8 +5,8 @@ const score = {
         score.result = score.result + lostCard.length * 42;
     },
     remove: function() {
-        let lostCard = document.querySelectorAll('[data-tid="Card"]');
-        score.result = score.result - lostCard.length * 42;
+        let flipCard = document.querySelectorAll('.empty-place');
+        score.result = score.result - flipCard.length * 42;
     },
     init: function() {
         let scoreSpan = document.querySelector('#score');

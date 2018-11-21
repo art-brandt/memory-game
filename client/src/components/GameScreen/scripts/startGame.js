@@ -41,9 +41,6 @@ export default function startGame() {
       firstCard.removeEventListener('click', flipCard);
       secondCard.removeEventListener('click', flipCard);
 
-      score.add();
-      score.init();
-
       setTimeout(removeCardsFromDeck, 1300);
       
       return;
@@ -63,10 +60,9 @@ export default function startGame() {
       secondCard.dataset.tid = 'Card'; 
 
       deckState.reset();
-
-      score.remove();
-      score.init();
     }, 1300);
+    score.remove();
+    score.init();
   }
  
   function removeCardsFromDeck() {
@@ -84,6 +80,9 @@ export default function startGame() {
 
     firstCard.classList.add('empty-place');
     secondCard.classList.add('empty-place');
+
+    score.add();
+    score.init();
 
     deckState.reset();
     checkEndGame();
